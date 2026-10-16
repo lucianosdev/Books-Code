@@ -1,0 +1,104 @@
+.contato {
+    padding: 80px 20px;
+}
+
+.contato h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.contato p {
+    text-align: center;
+    margin: 0 auto 18px;
+    font-size: 1.2rem;
+    line-height: 24px;
+    max-width: 600px;
+}
+
+.form-contato{
+    padding: 30px 50px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #360bf156;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+}
+
+.campo input,
+.campo textarea {
+
+    padding: 14px;
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    font-size: 0.9rem;
+
+    outline: none;
+
+    transition: .3s;
+}
+
+.campo textarea {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.campo input:focus,
+.campo textarea:focus {
+
+    border-color: #128b12;
+
+    box-shadow: 0 0 4px rgb(23, 122, 52);
+
+}
+
+.toast {
+
+    position: fixed;
+
+    top: 30px;
+    right: 30px;
+
+    background: #28a745;
+    color: white;
+
+    padding: 16px 24px;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.2);
+
+    opacity: 0;
+
+    transform: translateX(120%);
+
+    transition: opacity .8s ease,
+                transform .3s ease;
+
+    z-index: 9999;
+
+    pointer-events: none;
+
+}
+
+.toast.mostrar {
+
+    opacity: 1;
+
+    transform: translateX(0);
+
+}
+

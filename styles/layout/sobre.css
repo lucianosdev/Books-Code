@@ -1,0 +1,35 @@
+.sobre{
+    scroll-margin-top: 90px; /*ou padding-top: 80px;*/
+    padding:  80px 170px;
+   
+}
+
+.sobre h2 {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.conteiner-info{
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+
+    padding: 50px;
+    margin-top: 30px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #360bf156;
+
+}
+
+.info p{
+
+    font-size: 1.2rem;
+    text-align: center;
+
+}
+
+ 

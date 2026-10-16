@@ -1,0 +1,13 @@
+.rodape {
+    display: flex;
+    justify-content: center;
+    background: var(--cor-footer);
+    padding: 20px 50px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+
+
+
