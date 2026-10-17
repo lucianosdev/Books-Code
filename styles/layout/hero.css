@@ -1,23 +1,39 @@
-.hero{
-    padding:  150px;
+.hero {
+    padding: 80px 20px;
 }
-
 
 .slogan {
     margin-top: 30px;
-    padding-top: 80px;
+    padding-top: 40px;
     font-size: 1.8rem;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
-    
 }
 
-.acesso-books{
+.acesso-books {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
     margin-top: 25px;
+}
 
+/* TELAS DE SMARTPHONES */
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 40px 16px;
+    }
+
+    .slogan {
+        margin-top: 15px;
+        padding-top: 20px;
+        font-size: 1.4rem;
+    }
+
+    .acesso-books {
+        gap: 12px;
+        margin-top: 20px;
+    }
 }

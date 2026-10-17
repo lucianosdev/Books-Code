@@ -50,7 +50,7 @@ class ContatoSection extends HTMLElement {
                 </form>
 
                 <div id="toast" class="toast">
-                 Mensagem enviada com sucesso! ✅ </br>
+                 Mensagem enviada com sucesso! ✅ <br>
                     Obrigado pelo contato. 📚 
                 </div>
 

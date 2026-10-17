@@ -12,7 +12,6 @@
 
     padding: 10px 50px;
     border-radius: 2px;
-    
 }
 
 .logo {
@@ -26,16 +25,60 @@ nav a {
     text-decoration: none;
     margin-left: 20px;
     font-size: 1.1rem;
-    
 }
 
 nav a:hover {
     color: #1d2027;
-   
 }
 
 nav a.ativo {
-    
     color: #2563EB;
-    
+}
+
+
+/* BOTÃO DO MENU */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #374151;
+}
+
+
+/* TELAS DE SMARTPHONES */
+
+@media (max-width: 768px) {
+
+    .cabecalho {
+        padding: 10px 20px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-navegacao {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .menu-navegacao.menu-aberto {
+        display: flex;
+    }
+
+    nav a {
+        margin-left: 0;
+        padding: 10px 0;
+        font-size: 1rem;
+    }
 }

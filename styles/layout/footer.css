@@ -1,13 +1,36 @@
+/* RODAPÉ */
+
 .rodape {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
-    background: var(--cor-footer);
-    padding: 20px 50px;
-    border-radius: 6px;
+
+    width: 100%;
+    padding: 20px;
     margin-bottom: 8px;
-    font-size: 0.9rem;
+
+    background: var(--cor-footer);
+    border-radius: 6px;
+    text-align: center;
 }
 
+.rodape p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* TELAS DE SMARTPHONES */
+
+@media (max-width: 768px) {
+    .rodape {
+        padding: 20px 16px;
+    }
+
+    .rodape p {
+        font-size: 0.85rem;
+    }
+}
 
 
 

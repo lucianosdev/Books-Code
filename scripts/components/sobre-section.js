@@ -8,8 +8,8 @@ class SobreSection extends HTMLElement {
     <div class="conteiner-info">
      <div class="info">
        <p>
-          + Books & Code é uma plataforma que ajuda estudantes e desenvolvedores a encontrarem 
-           livros sobre tecnologias como HTML, CSS, JavaScript, React, Spring Boot e muito mais. + 
+           Books & Code é uma plataforma que ajuda estudantes e desenvolvedores a encontrarem 
+           livros sobre tecnologias como HTML, CSS, JavaScript, React, Spring Boot e muito mais.  
            
         </p> 
      </div>

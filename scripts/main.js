@@ -9,35 +9,38 @@ import "./services/api.js"
 
 window.addEventListener("DOMContentLoaded", () => {
 
-    const secoes = document.querySelectorAll("section");
+    const secoes = document.querySelectorAll("section[id]");
     const links = document.querySelectorAll("nav a");
 
-    const observer = new IntersectionObserver((entries) => {
+    function atualizarMenuAtivo() {
 
-        entries.forEach((entry) => {
+        const posicaoAtual = window.scrollY + 150;
+        let secaoAtual = secoes[0];
 
-            if (entry.isIntersecting) {
+        secoes.forEach((secao) => {
 
-                links.forEach((link) => {
-                    link.classList.remove("ativo");
-
-                    if (link.dataset.section === entry.target.id) {
-                        link.classList.add("ativo");
-                    }
-                });
-
+            if (secao.offsetTop <= posicaoAtual) {
+                secaoAtual = secao;
             }
 
         });
 
-    }, {
-        threshold: 0.30
-    });
+        links.forEach((link) => {
 
-    secoes.forEach((secao) => observer.observe(secao));
+            link.classList.toggle(
+                "ativo",
+                link.dataset.section === secaoAtual.id
+            );
+
+        });
+
+    }
+
+    window.addEventListener("scroll", atualizarMenuAtivo);
+
+    atualizarMenuAtivo();
 
 });
-
 
 const formulario = document.querySelector(".form-contato");
 const toast = document.getElementById("toast");
@@ -73,3 +76,4 @@ export function mostrarToast(mensagem) {
     }, 3000);
 
 }
+

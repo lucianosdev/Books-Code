@@ -7,7 +7,7 @@ class HeroSection extends HTMLElement {
     
     <p class="slogan">
 
-         Encontre livros sobre HTML, CSS,<br/>
+         Encontre livros sobre HTML, CSS,
          JavaScript, React e muito mais!
      </p>
 
